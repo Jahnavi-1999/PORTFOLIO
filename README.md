@@ -14,7 +14,6 @@ A modern, responsive personal portfolio built using React, Tailwind CSS, and Fra
 - **Experience & Resume**: Timeline of experience and a downloadable resume.
 - **Publications & Certifications**: Interactive cards linking to official publications and credentials.
 - **Contact Form**: Formspree-enabled contact form with name, email, and message fields.
-- **Theme Toggle**: Switch between light and dark mode seamlessly.
 - **Fully Responsive**: Looks great on all devices, from mobile to desktop.
 
 ---
@@ -66,3 +65,28 @@ A modern, responsive personal portfolio built using React, Tailwind CSS, and Fra
 ```bash
 git clone https://github.com/ASHRITH-SAMBARAJU/Portfolio.git
 cd Portfolio
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the Development Server
+
+```bash
+npm run dev
+```
+
+## Contact
+
+**Ashrith Sambaraju**  
+Email: [ashrithsambaraju@gmail.com](mailto:ashrithsambaraju@gmail.com)  
+LinkedIn: [linkedin.com/in/ashrith-sambaraju](https://www.linkedin.com/in/ashrith-sambaraju)  
+
+
+
+
+
+
