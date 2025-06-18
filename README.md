@@ -1,7 +1,7 @@
 # Developer Portfolio Website
 
 ## Overview  
-A modern, responsive personal portfolio built using React, Tailwind CSS, and Framer Motion. This portfolio showcases my projects, publications, skills, resume, and contact information — all in a clean, minimal layout. It includes animated transitions, theme toggling, and a contact form integrated with Formspree.
+A modern, responsive personal portfolio built using React, Tailwind CSS, and Framer Motion. This portfolio showcases my projects, publications, skills, resume, and contact information - all in a clean, minimal layout. It includes animated transitions, theme toggling, and a contact form integrated with Formspree.
 
 ---
 
