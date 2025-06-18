@@ -1,0 +1,179 @@
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import { Github, Linkedin, Mail, Send, MapPin, Phone } from "lucide-react";
+import { motion } from "framer-motion";
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
+
+const ContactSection = () => {
+  return (
+    <section
+      id="contact"
+      className="py-28 bg-gradient-to-br from-black via-gray-900 to-black text-white"
+    >
+      <div className="container mx-auto px-6">
+        {/* Header */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeUp}
+          className="text-center mb-20"
+        >
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
+            Let’s Connect
+          </h2>
+          <div className="h-1 w-24 bg-white mx-auto rounded-full mb-6" />
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            Whether it’s a job opportunity or collaboration — I’d love to hear from you.
+          </p>
+        </motion.div>
+
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16">
+          {/* Contact Form */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUp}
+            className="bg-white text-black p-8 rounded-3xl shadow-2xl"
+          >
+            <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
+            <form
+              action="https://formspree.io/f/xqablgep"
+              method="POST"
+              className="space-y-6"
+            >
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <Label htmlFor="name">Full Name</Label>
+                  <Input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                    placeholder="Your name"
+                    className="mt-2 bg-gray-50"
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="email">Email Address</Label>
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    placeholder="your.email@example.com"
+                    className="mt-2 bg-gray-50"
+                  />
+                </div>
+              </div>
+              <div>
+                <Label htmlFor="message">Message</Label>
+                <Textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Let me know what you want to talk about..."
+                  className="mt-2 bg-gray-50 min-h-[150px]"
+                />
+              </div>
+              <Button
+                type="submit"
+                className="w-full bg-black text-white hover:bg-gray-800 py-4 text-lg font-medium rounded-xl flex items-center justify-center gap-3 transition-all duration-300 hover:shadow-lg"
+              >
+                <Send className="w-5 h-5" />
+                Send Message
+              </Button>
+            </form>
+          </motion.div>
+
+          {/* Contact Info + Social Links */}
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUp}
+            className="space-y-8"
+          >
+            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10">
+              <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
+                    <Mail className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-gray-300 text-sm">Email</p>
+                    <p className="text-white font-medium">ashrithsambaraju@gmail.com</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
+                    <MapPin className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-gray-300 text-sm">Location</p>
+                    <p className="text-white font-medium">Onsite / Hybrid / Remote</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
+                    <Phone className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-gray-300 text-sm">Response Time</p>
+                    <p className="text-white font-medium">Typically replies within 24 hours</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10">
+              <h3 className="text-xl font-bold mb-6">Find Me Online</h3>
+              <div className="flex gap-4">
+                <a
+                  href="https://github.com/ASHRITH-SAMBARAJU"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="GitHub"
+                  className="w-14 h-14 bg-white/10 hover:bg-white/20 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+                >
+                  <Github className="w-6 h-6 text-white" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/ashrith-sambaraju/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="LinkedIn"
+                  className="w-14 h-14 bg-white/10 hover:bg-white/20 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+                >
+                  <Linkedin className="w-6 h-6 text-white" />
+                </a>
+                <a
+                  href="mailto:ashrithsambaraju@gmail.com"
+                  title="Gmail"
+                  className="w-14 h-14 bg-white/10 hover:bg-white/20 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+                >
+                  <Mail className="w-6 h-6 text-white" />
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Copyright */}
+      <p className="text-center text-gray-400 mt-16 text-sm">
+        © {new Date().getFullYear()} Ashrith Sambaraju. All rights reserved.
+      </p>
+    </section>
+  );
+};
+
+export default ContactSection;
