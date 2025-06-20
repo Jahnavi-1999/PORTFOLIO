@@ -13,11 +13,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[#fef9f5]/95 backdrop-blur-md z-50 shadow-md">
+    <nav className="fixed top-0 left-0 w-full bg-[#fef9f5]/95 backdrop-blur-md z-50 shadow-md overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 w-full">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex-shrink-0">
             <img
               src="/logos/as_logo.png"
               alt="Ashrith Sambaraju Logo"
@@ -44,8 +44,11 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Toggle */}
-          <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-black">
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-black focus:outline-none"
+            >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
