@@ -14,9 +14,9 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="py-28 bg-gradient-to-br from-black via-gray-900 to-black text-white"
+      className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-black via-gray-900 to-black text-white"
     >
-      <div className="container mx-auto px-6">
+      <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
           initial="hidden"
@@ -25,23 +25,23 @@ const ContactSection = () => {
           variants={fadeUp}
           className="text-center mb-20"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 tracking-tight">
             Let’s Connect
           </h2>
-          <div className="h-1 w-24 bg-white mx-auto rounded-full mb-6" />
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <div className="h-1 w-20 bg-white mx-auto rounded-full mb-6" />
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
             Whether it’s a job opportunity or collaboration — I’d love to hear from you.
           </p>
         </motion.div>
 
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
-            className="bg-white text-black p-8 rounded-3xl shadow-2xl"
+            className="bg-white text-black p-6 sm:p-8 rounded-3xl shadow-2xl"
           >
             <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
             <form
@@ -49,7 +49,7 @@ const ContactSection = () => {
               method="POST"
               className="space-y-6"
             >
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <Label htmlFor="name">Full Name</Label>
                   <Input
@@ -85,7 +85,7 @@ const ContactSection = () => {
               </div>
               <Button
                 type="submit"
-                className="w-full bg-black text-white hover:bg-gray-800 py-4 text-lg font-medium rounded-xl flex items-center justify-center gap-3 transition-all duration-300 hover:shadow-lg"
+                className="w-full bg-black text-white hover:bg-gray-800 py-4 text-base sm:text-lg font-medium rounded-xl flex items-center justify-center gap-3 transition-all duration-300 hover:shadow-lg"
               >
                 <Send className="w-5 h-5" />
                 Send Message
@@ -101,77 +101,77 @@ const ContactSection = () => {
             variants={fadeUp}
             className="space-y-8"
           >
-            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10">
-              <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
+            <div className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-white/10 space-y-6">
+              <h3 className="text-2xl font-bold">Get in Touch</h3>
+
+              {/* Info blocks */}
+              {[
+                {
+                  icon: <Mail className="w-6 h-6 text-white" />,
+                  label: "Email",
+                  value: "ashrithsambaraju@gmail.com",
+                },
+                {
+                  icon: <MapPin className="w-6 h-6 text-white" />,
+                  label: "Location",
+                  value: "Onsite / Hybrid / Remote",
+                },
+                {
+                  icon: <Phone className="w-6 h-6 text-white" />,
+                  label: "Response Time",
+                  value: "Typically replies within 24 hours",
+                },
+              ].map((item, idx) => (
+                <div key={idx} className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
-                    <Mail className="w-6 h-6 text-white" />
+                    {item.icon}
                   </div>
                   <div>
-                    <p className="text-gray-300 text-sm">Email</p>
-                    <p className="text-white font-medium">ashrithsambaraju@gmail.com</p>
+                    <p className="text-gray-300 text-sm">{item.label}</p>
+                    <p className="text-white font-medium">{item.value}</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-gray-300 text-sm">Location</p>
-                    <p className="text-white font-medium">Onsite / Hybrid / Remote</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
-                    <Phone className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-gray-300 text-sm">Response Time</p>
-                    <p className="text-white font-medium">Typically replies within 24 hours</p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
 
-            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10">
-              <h3 className="text-xl font-bold mb-6">Find Me Online</h3>
-              <div className="flex gap-4">
+            <div className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-white/10">
+              <h3 className="text-xl font-bold mb-4">Find Me Online</h3>
+              <div className="flex flex-wrap gap-4">
                 <a
                   href="https://github.com/ASHRITH-SAMBARAJU"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="GitHub"
-                  className="w-14 h-14 bg-white/10 hover:bg-white/20 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  className="w-12 h-12 sm:w-14 sm:h-14 bg-white/10 hover:bg-white/20 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110"
                 >
-                  <Github className="w-6 h-6 text-white" />
+                  <Github className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/ashrith-sambaraju/"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="LinkedIn"
-                  className="w-14 h-14 bg-white/10 hover:bg-white/20 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  className="w-12 h-12 sm:w-14 sm:h-14 bg-white/10 hover:bg-white/20 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110"
                 >
-                  <Linkedin className="w-6 h-6 text-white" />
+                  <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </a>
                 <a
                   href="mailto:ashrithsambaraju@gmail.com"
                   title="Gmail"
-                  className="w-14 h-14 bg-white/10 hover:bg-white/20 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  className="w-12 h-12 sm:w-14 sm:h-14 bg-white/10 hover:bg-white/20 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110"
                 >
-                  <Mail className="w-6 h-6 text-white" />
+                  <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </a>
               </div>
             </div>
           </motion.div>
         </div>
-      </div>
 
-      {/* Copyright */}
-      <p className="text-center text-gray-400 mt-16 text-sm">
-        © {new Date().getFullYear()} Ashrith Sambaraju. All rights reserved.
-      </p>
+        {/* Copyright */}
+        <p className="text-center text-gray-400 mt-16 text-sm">
+          © {new Date().getFullYear()} Ashrith Sambaraju. All rights reserved.
+        </p>
+      </div>
     </section>
   );
 };
