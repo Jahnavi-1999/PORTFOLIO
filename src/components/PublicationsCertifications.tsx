@@ -48,6 +48,11 @@ const PublicationsCertifications = () => {
       issuer: "College Workshop",
       file: "ANN WORKSHOP.pdf",
     },
+     {
+    title: "Introduction to CyberSecurity",
+    issuer: "Cisco",
+    file: "CISCO.pdf",
+  },
   ];
 
   return (
