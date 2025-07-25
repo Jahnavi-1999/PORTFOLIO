@@ -4,6 +4,11 @@ import CertificateCard from "./CertificateCard";
 const PublicationsCertifications = () => {
   const certificates = [
     {
+    title: "AWS Essentials: A Complete Beginner's Guide",
+    issuer: "Udemy",
+    file: "AWS - UDEMY.pdf",
+    },
+    {
       title: "IRJAEH Publication",
       issuer: "International Research Journal of Advanced Engineering Hub",
       file: "IRJAEH PUBLICATION.pdf",
