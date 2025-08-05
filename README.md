@@ -63,7 +63,7 @@ A modern, responsive personal portfolio built using React, Tailwind CSS, and Fra
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/ASHRITH-SAMBARAJU/Portfolio.git](https://github.com/Jahnavi-1999/PORTFOLIO.git)
+git clone https://github.com/Jahnavi-1999/PORTFOLIO.git
 cd Portfolio
 ```
 
