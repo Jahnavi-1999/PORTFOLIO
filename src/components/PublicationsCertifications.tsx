@@ -3,31 +3,15 @@ import { motion } from "framer-motion";
 const PublicationsCertifications = () => {
   const certifications = [
     {
-<<<<<<< HEAD
       title: "Microsoft Certified: Azure Fundamentals",
       issuer: "Microsoft",
       link: "https://learn.microsoft.com/en-us/users/jahnavisambaraju-5538/credentials/af46088cc4fe456?ref=https%3A%2F%2Fwww.linkedin.com%2F",
-=======
-    title: "AWS Essentials: A Complete Beginner's Guide",
-    issuer: "Udemy",
-    file: "AWS - UDEMY.pdf",
-    },
-    {
-      title: "IRJAEH Publication",
-      issuer: "International Research Journal of Advanced Engineering Hub",
-      file: "IRJAEH PUBLICATION.pdf",
->>>>>>> 87994b4241503303bc618d1d9aaa3890b76dcf85
     },
     {
       title: "ITIL 4 Exam Preparation",
       issuer: "Coursera",
       link: "https://www.coursera.org/verify/NHHT3FJQMBD6",
     },
-     {
-    title: "Introduction to CyberSecurity",
-    issuer: "Cisco",
-    file: "CISCO.pdf",
-  },
   ];
 
   return (

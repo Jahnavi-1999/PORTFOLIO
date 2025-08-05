@@ -8,7 +8,8 @@ import { Analytics } from "@vercel/analytics/react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
-import ProfExp from "./components/ProfExp"; // ✅ Import your ProfExp component
+import ProfExp from "./components/Profexp";
+ // ✅ Import your ProfExp component
 
 const queryClient = new QueryClient();
 
