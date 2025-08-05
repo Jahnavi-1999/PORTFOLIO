@@ -30,34 +30,6 @@ A modern, responsive personal portfolio built using React, Tailwind CSS, and Fra
 
 ---
 
-## Output Screenshots
-
-### Homepage  
-![Home Page](public/outputs/1homepage.png)
-
-### About Page  
-![About Page](public/outputs/2aboutpage.png)
-
-### Publications & Certifications  
-![Publications](public/outputs/3pubandcert.png)
-
-### Projects  
-![Projects](public/outputs/4projects.png)
-
-### Tech Stack  
-![Tech Stack](public/outputs/5techstack.png)
-
-### Experience  
-![Experience](public/outputs/6exp.png)
-
-### Resume  
-![Resume](public/outputs/7resume.png)
-
-### Contact  
-![Contact](public/outputs/8contact.png)
-
----
-
 ## How to Run the Project
 
 ### 1. Clone the Repository
