@@ -4,8 +4,9 @@ import { Download, FileText, Award, User } from "lucide-react";
 const ResumeSection = () => {
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/ASHRITH%20SAMBARAJU.pdf"; // URL-safe file name
-    link.download = "Ashrith_Sambaraju_Resume.pdf";
+    // Public/ folder files are served from the root—spaces URL-encoded
+    link.href = "/Sambaraju%20Jahnavi.pdf"; 
+    link.download = "Sambaraju_Jahnavi_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

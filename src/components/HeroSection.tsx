@@ -20,22 +20,20 @@ const HeroSection = () => {
       {/* White Container */}
       <div className="relative z-10 max-w-5xl w-full rounded-3xl bg-white text-black shadow-xl px-10 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Profile Image */}
-      {/* Profile Image */}
-<motion.div
-  initial={{ opacity: 0, x: -40 }}
-  animate={{ opacity: 1, x: 0 }}
-  transition={{ duration: 0.8 }}
-  className="flex justify-center"
->
-  <div className="bg-[#111827] p-2 rounded-full shadow-xl">
-    <img
-      src="/profile.jpg"
-      alt="Ashrith Sambaraju"
-      className="w-72 h-72 md:w-[18rem] md:h-[18rem] object-cover rounded-full"
-    />
-  </div>
-</motion.div>
-
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="flex justify-center"
+        >
+          <div className="bg-[#111827] p-2 rounded-full shadow-xl">
+            <img
+              src="/profile.jpg"
+              alt="Jahnavi Sambaraju"
+              className="w-72 h-72 md:w-[18rem] md:h-[18rem] object-cover rounded-full"
+            />
+          </div>
+        </motion.div>
 
         {/* Text Content */}
         <motion.div
@@ -45,7 +43,7 @@ const HeroSection = () => {
           className="text-center md:text-left space-y-6"
         >
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-black via-gray-700 to-gray-500 leading-tight">
-            Ashrith Sambaraju
+            Jahnavi Sambaraju
           </h1>
 
           <p className="text-sm text-black tracking-wider uppercase font-semibold">
@@ -57,15 +55,15 @@ const HeroSection = () => {
             {[
               {
                 icon: <Github className="w-5 h-5" />,
-                href: "https://github.com/ASHRITH-SAMBARAJU",
+                href: "https://github.com/Jahnavi-1999",
               },
               {
                 icon: <Linkedin className="w-5 h-5" />,
-                href: "https://www.linkedin.com/in/ashrith-sambaraju/",
+                href: "https://linkedin.com/in/jahnavi-sambaraju",
               },
               {
                 icon: <Mail className="w-5 h-5" />,
-                href: "mailto:ashrithsambaraju@gmail.com",
+                href: "mailto:jahnaviirao@gmail.com",
               },
             ].map((item, idx) => (
               <motion.a
@@ -84,18 +82,17 @@ const HeroSection = () => {
           {/* Type Animation */}
           <TypeAnimation
             sequence={[
-              "Aspiring Software Developer", 2000,
-              "AIML Engineer", 2000,
-              "Full-Stack Enthusiast", 2000,
-              "Problem Solver", 2000,
+              "Cloud Engineer", 2000,
+              "Software Engineer", 2000,
+              
             ]}
             wrapper="h2"
             className="text-xl sm:text-2xl md:text-3xl !text-black font-semibold tracking-wide"
             repeat={Infinity}
           />
 
-          <p className="text-lg sm:text-xl text-black leading-relaxed">
-            Crafting scalable solutions with clean code, performance, and purposeful design.
+          <p className="text-sm text-black tracking-wider uppercase font-semibold">
+           FROM CODE TO CLOUD - BUILDING RELIABLE, SCALABLE SOLUTIONS
           </p>
 
           {/* Buttons */}

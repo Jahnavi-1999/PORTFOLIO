@@ -45,7 +45,7 @@ const ContactSection = () => {
           >
             <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
             <form
-              action="https://formspree.io/f/xqablgep"
+              action="https://formspree.io/f/xjkogvbn"
               method="POST"
               className="space-y-6"
             >
@@ -104,12 +104,11 @@ const ContactSection = () => {
             <div className="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-white/10 space-y-6">
               <h3 className="text-2xl font-bold">Get in Touch</h3>
 
-              {/* Info blocks */}
-              {[
+              {[ 
                 {
                   icon: <Mail className="w-6 h-6 text-white" />,
                   label: "Email",
-                  value: "ashrithsambaraju@gmail.com",
+                  value: "jahnaviirao@gmail.com",
                 },
                 {
                   icon: <MapPin className="w-6 h-6 text-white" />,
@@ -138,7 +137,7 @@ const ContactSection = () => {
               <h3 className="text-xl font-bold mb-4">Find Me Online</h3>
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="https://github.com/ASHRITH-SAMBARAJU"
+                  href="https://github.com/Jahnavi-1999"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="GitHub"
@@ -147,7 +146,7 @@ const ContactSection = () => {
                   <Github className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/ashrith-sambaraju/"
+                  href="https://linkedin.com/in/jahnavi-sambaraju"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="LinkedIn"
@@ -156,7 +155,7 @@ const ContactSection = () => {
                   <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </a>
                 <a
-                  href="mailto:ashrithsambaraju@gmail.com"
+                  href="mailto:jahnaviirao@gmail.com"
                   title="Gmail"
                   className="w-12 h-12 sm:w-14 sm:h-14 bg-white/10 hover:bg-white/20 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110"
                 >
@@ -169,7 +168,7 @@ const ContactSection = () => {
 
         {/* Copyright */}
         <p className="text-center text-gray-400 mt-16 text-sm">
-          © {new Date().getFullYear()} Ashrith Sambaraju. All rights reserved.
+          © {new Date().getFullYear()} Jahnavi Sambaraju. All rights reserved.
         </p>
       </div>
     </section>

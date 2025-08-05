@@ -1,47 +1,55 @@
-import { Code, Database, MonitorSmartphone, Smile, Layers } from "lucide-react";
+import { Code, Database, MonitorSmartphone, Smile, Layers, Cloud, Shield, Terminal } from "lucide-react";
 import { motion } from "framer-motion";
 
 const skillCategories = [
   {
-    title: "AIML Frameworks & Libraries",
-    skills: ["NumPy", "Pandas", "Matplotlib", "OpenCV"],
-    icon: Layers,
-    color: "from-yellow-500 to-orange-500",
-  },
-  {
-    title: "Programming Languages",
-    skills: ["C", "Python", "R"],
+    title: "Programming & Scripting",
+    skills: ["C", "Python", "R", "HTML", "CSS", "JavaScript", "SQL", "PowerShell", "Bash"],
     icon: Code,
     color: "from-blue-500 to-cyan-500",
   },
   {
-    title: "Database & Data Storage",
-    skills: ["MySQL", "MongoDB"],
-    icon: Database,
-    color: "from-purple-500 to-pink-500",
+    title: "Cloud Platforms & Infrastructure",
+    skills: [
+      "Azure (AD, VMs, LoadBalancer, VNet)",
+      "AWS (EC2, S3, Lambda)",
+      "VMware (vSphere, ESXi, vCenter)",
+      ,
+    ],
+    icon: Cloud,
+    color: "from-indigo-500 to-blue-700",
   },
   {
-    title: "IDEs & Tools",
-    skills: ["Visual Studio", "Jupyter", "Google Colab"],
-    icon: MonitorSmartphone,
+    title: "Operating Systems",
+    skills: ["Linux", "Windows"],
+    icon: Terminal,
     color: "from-green-500 to-emerald-500",
   },
   {
-    title: "Frontend Development",
-    skills: ["HTML", "CSS", "React", "Bootstrap"],
-    icon: MonitorSmartphone,
-    color: "from-orange-500 to-yellow-500",
+    title: "AI & ML",
+    skills: [
+      "Decision Tree",
+      "Random Forest",
+      "Confusion Matrix",
+      "Kappa Statistic",
+      "ANN",
+      "TensorFlow",
+      "Keras",
+    ],
+    icon: Layers,
+    color: "from-yellow-500 to-orange-500",
   },
   {
-    title: "Soft Skills",
-    skills: [
-      "Communication",
-      "Networking",
-      "Problem Solving",
-      "Task Management",
-    ],
+    title: "Methodologies",
+    skills: ["SDLC", "CI/CD", "Agile Methodologies", "ITIL Framework"],
     icon: Smile,
     color: "from-gray-500 to-gray-800",
+  },
+  {
+    title: "IDEs & Tools",
+    skills: ["R Studio", "Visual Studio Code"],
+    icon: MonitorSmartphone,
+    color: "from-teal-500 to-green-600",
   },
 ];
 
@@ -68,7 +76,7 @@ const SkillsSection = () => {
           </h2>
           <div className="h-1 w-24 bg-white mx-auto rounded-full mb-6" />
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            A showcase of my technical foundations and practical toolset.
+            A showcase of my technical expertise and practical toolset.
           </p>
         </div>
 

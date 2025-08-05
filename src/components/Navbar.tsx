@@ -19,9 +19,9 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <img
-              src="/logos/as_logo.png"
-              alt="Ashrith Sambaraju Logo"
-              className="h-10 w-auto object-contain"
+              src="/preview.png"
+              alt="Jahnavi Sambaraju Logo"
+              className="h-16 w-auto object-contain"
             />
           </div>
 
