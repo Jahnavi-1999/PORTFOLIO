@@ -6,7 +6,7 @@ import ExperienceSection from "@/components/ExperienceSection";
 import ResumeSection from "@/components/ResumeSection";
 import ContactSection from "@/components/ContactSection";
 import PublicationsCertifications from "@/components/PublicationsCertifications";
-import ProfExp from "@/components/ProfExp"; // ✅ Import your new Professional Experience section
+import Profexp from "@/components/Profexp"; // ✅ Import your new Professional Experience section
 
 const Index = () => {
   return (
@@ -32,8 +32,8 @@ const Index = () => {
       </section>
 
       {/* ✅ New Professional Experience section */}
-      <section id="profexp">
-        <ProfExp />
+      <section id="Profexp">
+        <Profexp />
       </section>
 
       <section id="experience">

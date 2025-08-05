@@ -8,8 +8,8 @@ import { Analytics } from "@vercel/analytics/react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/Layout";
-import ProfExp from "./components/Profexp";
- // ✅ Import your ProfExp component
+import Profexp from "./components/Profexp";
+ // ✅ Import your Profexp component
 
 const queryClient = new QueryClient();
 
@@ -22,7 +22,7 @@ const App = () => (
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/profexp" element={<ProfExp />} /> {/* ✅ New route */}
+            <Route path="/Profexp" element={<Profexp />} /> {/* ✅ New route */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

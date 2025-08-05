@@ -42,7 +42,7 @@ const experiences = [
   },
 ];
 
-const ProfExp = () => {
+const Profexp = () => {
   return (
     <section className="py-28 bg-gradient-to-br from-black via-gray-900 to-black text-white">
       <div className="max-w-6xl mx-auto px-6">
@@ -96,4 +96,4 @@ const ProfExp = () => {
   );
 };
 
-export default ProfExp;
+export default Profexp;
